@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-microservice-with-grpc",
+  "version": "1.0.0",
+  "description": "Even though real-world microservices typically reside in separate computers or containers, we’ll create a monorepo-oriented Node.js project for this",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abubakar471/nodejs-microservice-with-grpc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/abubakar471/nodejs-microservice-with-grpc/issues"
+  },
+  "homepage": "https://github.com/abubakar471/nodejs-microservice-with-grpc#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.4",
+    "@grpc/proto-loader": "^0.8.1",
+    "express": "^5.2.1"
+  }
+}
