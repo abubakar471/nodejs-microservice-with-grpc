@@ -78,3 +78,12 @@ It is a test client just to test the processor microservice.
 
 ---
 
+# Developing the gRPC client
+
+The main microservice here will act as our gRPC client and talk with other two secondary service, which are also gRPC servers.
+
+### ./main-ms/main.js
+
+The main microservice’s goal is to accept a food product order request, find a recipe, process the order, and update the order status.
+
+
