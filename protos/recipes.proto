@@ -6,8 +6,9 @@ message ProductId {
 
 message Recipe {
   uint32 id = 1;
-  string title = 2;
-  string notes = 3;
+  uint32 productId = 2;
+  string title = 3;
+  string notes = 4;
 }
 
 service Recipes {

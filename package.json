@@ -4,7 +4,9 @@
   "description": "Even though real-world microservices typically reside in separate computers or containers, we’ll create a monorepo-oriented Node.js project for this",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-recipe-ms": "node ./recipe-ms/main.js",
+    "start-processor-ms": "node ./processor-ms/main.js",
+    "start": "concurrently 'npm run start-recipe-ms' 'npm run start-processor-ms'"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/abubakar471/nodejs-microservice-with-grpc/issues"
   },
