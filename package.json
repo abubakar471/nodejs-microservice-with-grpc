@@ -6,7 +6,8 @@
   "scripts": {
     "start-recipe-ms": "node ./recipe-ms/main.js",
     "start-processor-ms": "node ./processor-ms/main.js",
-    "start": "concurrently 'npm run start-recipe-ms' 'npm run start-processor-ms'"
+    "start-main-ms": "node ./main-ms/main.js",
+    "start": "concurrently 'npm run start-recipe-ms' 'npm run start-processor-ms' 'npm run start-main-ms'"
   },
   "repository": {
     "type": "git",
